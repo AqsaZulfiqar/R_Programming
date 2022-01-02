@@ -25,8 +25,8 @@ output: html_document
 ```{r }
 #### Start solution ####
 ```
-
-
+name = "aqsa"
+print(name)
 ```{r }
 
 ```
@@ -35,18 +35,21 @@ output: html_document
 ```{r }
 
 ```
-
-
-```{r }
-
-```
-
+y <- 100:120
+y
 
 ```{r }
 
 ```
+m <- matrix(2:10%2, nrow = 3, ncol = 3)
+m 
 
+```{r }
 
+```
+a = "aqsa"
+b = "zulfiqar"
+print (a, b) 
 ```{r }
 #### End solution ####
 ```
