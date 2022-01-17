@@ -68,17 +68,17 @@ print (a, b)
 
 ```{r }
 
-```
-
-
-```{r }
-
-```
-
+ emp_status <- factor(c("unemployed","employed", "selfEmployed" ))
+> levels(emp_status)
+emp_status
 
 ```{r }
 
-```
+emp_status <- factor(c("unemployed","employed", "selfEmployed" ), levels = c("selfEmployed", "employed", "unemployed"))
+table(emp_status, levels(emp_status))
+
+```{r }
+ unclass(emp_status)
 
 
 ```{r }
@@ -103,27 +103,13 @@ print (a, b)
 ```
 
 
-```{r }
+bank_customers <- data.frame(
+  customerID= c(0,1,2,3,4),
+  hasaccount= c("NO", "yes", "YES", "YES", NA),
+  totalbalance = c(NA, 10,000,100, 2,000)
 
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
+)
+bank_customers
 #### End solution ####
 ```
 
@@ -145,29 +131,36 @@ print (a, b)
 ```
 
 
-```{r }
+prime_numbers <- function(n) {
+  if (n >= 2) {
+    x = seq(2, n)
+    prime_nums = c()
+    for (i in seq(2, n)) {
+      if (any(x == i)) {
+        prime_nums = c(prime_nums, i)
+        x = c(x[(x %% i) != 0], i)
+      }
+    }
+    return(prime_nums)
+  }
+  else 
+  {
+    stop("Input number should be at least 2.")
+  }
+} 
+prime_numbers(12)
 
 ```
 
 
 ```{r }
 
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
+while (var < 10) {
++   print(var)
++   var <- var + 1
++   
++ }
+> print(var)
 
 
 ```{r }
@@ -184,22 +177,10 @@ print (a, b)
 ```
 
 
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
+mat_1 <- matrix(1:9, nrow = 3, ncol = 3)
+> mat_1
+> mat_1[2,]
+> dim(mat_1)
 
 ```
 
