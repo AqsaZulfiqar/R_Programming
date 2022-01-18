@@ -209,23 +209,22 @@ mat_1 <- matrix(1:9, nrow = 3, ncol = 3)
 #### Start solution ####
 ```
 
-
-gcd <- function(x,y){
-  if(x == 0)
-    return(y)
-  if(y == )
-    return(x)
-  if(x == y)
-    return(x)
-  if(x > y)
-    return(gcd(x-y, y))
-  return(gcd(x, y-x))
-  x = 98
-  y = 56
-if(gcd(x,y))
-    print("gcd of ", x, "and",  y "is", gcd(x,y))
-else
-    print("no")
+gcd <- function(a,b){
+  if(a>b){
+    res=a
+  }
+  else
+    res=b
+}
+for (i in 1:res) {
+  if((a%%i==0) && (b%%i==0)){
+    answer = i
+  }
+  return(answer)
+}
+  gcd(90,12)
+  answer <- gcd(54,70)
+  answer
 
 }
 
