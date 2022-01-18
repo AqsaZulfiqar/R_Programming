@@ -210,19 +210,25 @@ mat_1 <- matrix(1:9, nrow = 3, ncol = 3)
 ```
 
 
-```{r }
+gcd <- function(x,y){
+  if(x == 0)
+    return(y)
+  if(y == )
+    return(x)
+  if(x == y)
+    return(x)
+  if(x > y)
+    return(gcd(x-y, y))
+  return(gcd(x, y-x))
+  x = 98
+  y = 56
+if(gcd(x,y))
+    print("gcd of ", x, "and",  y "is", gcd(x,y))
+else
+    print("no")
 
-```
+}
 
-
-```{r }
-
-```
-
-
-```{r }
-
-```
 
 
 ```{r }
