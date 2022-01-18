@@ -257,23 +257,17 @@ for (i in 1:res) {
 ```
 
 
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
+  allcondationmeet <- function(a,b){
+    if((a>b)&&(a%%b==0)){
+      return(TRUE)
+    
+    }
+    else
+      return(FALSE)
+    
+    
+  }
+  allcondationmeet(10,8)
 ```
 
 
